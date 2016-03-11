@@ -18,7 +18,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
-public class ITest extends JFrame {
+public class InternetChecker extends JFrame {
 
 	JPanel mainPanel;
 	JLabel dispLabel;
@@ -27,7 +27,7 @@ public class ITest extends JFrame {
 	boolean alive, prev;
 	Color curr;
 
-	ITest() {
+	InternetChecker() {
 		super("Auto Internet Connection Monitor v1.0b");
 		alive = true;
 		prev = isInternetReachable();
@@ -111,6 +111,6 @@ public class ITest extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		new ITest();
+		new InternetChecker();
 	}
 }
